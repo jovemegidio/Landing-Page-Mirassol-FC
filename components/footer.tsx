@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 const socialLinks = [
@@ -46,11 +47,13 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg font-[family-name:var(--font-oswald)]">
-                  M
-                </span>
-              </div>
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mirassol_Futebol_Clube_logo.svg/800px-Mirassol_Futebol_Clube_logo.svg.png"
+                alt="Escudo Mirassol FC"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <span className="text-foreground font-bold text-lg tracking-tight font-[family-name:var(--font-oswald)] uppercase">
                 Mirassol FC
               </span>

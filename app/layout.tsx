@@ -13,15 +13,16 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Mirassol FC - O Leão da Alta Araraquarense",
+  title: "Mirassol FC - O Leão da Alta Araraquarense | Série A 2025",
   description:
-    "Site oficial do Mirassol Futebol Clube. Confira notícias, jogos, elenco e tudo sobre o Leão da Alta Araraquarense.",
+    "Site oficial do Mirassol Futebol Clube. 100 anos de história. Primeira temporada na Série A do Brasileirão 2025. Confira notícias, jogos e elenco do Leão.",
   keywords: [
     "Mirassol FC",
     "Futebol",
-    "Campeonato Paulista",
-    "Série B",
+    "Campeonato Brasileiro",
+    "Série A",
     "Leão da Alta Araraquarense",
+    "Brasileirão 2025",
   ],
 };
 

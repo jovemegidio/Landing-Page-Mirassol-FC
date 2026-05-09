@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Heart, Gift, Star } from "lucide-react";
+import Image from "next/image";
+import { Heart, Gift, Star, Ticket } from "lucide-react";
 
 const benefits = [
   {
@@ -21,9 +22,16 @@ const benefits = [
 
 export function CTA() {
   return (
-    <section id="socio" className="py-24 md:py-32 bg-muted relative overflow-hidden">
-      {/* Decorative background */}
+    <section id="socio" className="py-24 md:py-32 relative overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0">
+        <Image
+          src="https://s2-ge.glbimg.com/5g1l8Ym6zWPZqQKjdLMY4pXiLhE=/0x0:1280x854/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/U/Z/8GKSNTTqqAAAJZ0q2QlQ/mirassol-torcida.jpg"
+          alt="Torcida do Mirassol"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-background/90" />
         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-secondary to-primary" />
       </div>
 

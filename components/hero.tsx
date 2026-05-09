@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
 export function Hero() {
@@ -7,14 +8,17 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://s2-ge.glbimg.com/8uZRKrQzBJD4jCcHJh8nDWJxuYA=/0x0:1280x853/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/U/F/MASUKoRqAAAkp4W0m6rg/whatsapp-image-2024-11-18-at-22.58.44.jpeg"
+          alt="Torcida do Mirassol FC"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <p className="text-primary uppercase tracking-[0.3em] text-sm md:text-base font-medium mb-6">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -21,11 +22,13 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg md:text-xl font-[family-name:var(--font-oswald)]">
-                M
-              </span>
-            </div>
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mirassol_Futebol_Clube_logo.svg/800px-Mirassol_Futebol_Clube_logo.svg.png"
+              alt="Escudo Mirassol FC"
+              width={48}
+              height={48}
+              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
             <span className="text-foreground font-bold text-lg md:text-xl tracking-tight font-[family-name:var(--font-oswald)] uppercase">
               Mirassol FC
             </span>
