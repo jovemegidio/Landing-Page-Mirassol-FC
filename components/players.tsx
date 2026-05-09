@@ -1,29 +1,49 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-const positions = ["Todos", "Goleiros", "Defensores", "Meio-Campo", "Atacantes"];
+const positions = ["Todos", "Goleiros", "Defensores", "Volantes", "Meias", "Atacantes"];
 
+// Elenco oficial 2025 - Série A
 const players = [
+  // Goleiros
   { name: "Alex Muralha", number: "1", position: "Goleiros" },
-  { name: "Lucão", number: "3", position: "Defensores" },
-  { name: "João Victor", number: "4", position: "Defensores" },
+  { name: "Walter", number: "12", position: "Goleiros" },
+  { name: "Thomazella", number: "22", position: "Goleiros" },
+  { name: "Gustavo Lacerda", number: "32", position: "Goleiros" },
+  // Defensores (Zagueiros e Laterais)
+  { name: "Alan Empereur", number: "3", position: "Defensores" },
+  { name: "David Braz", number: "4", position: "Defensores" },
+  { name: "Jemmes", number: "14", position: "Defensores" },
+  { name: "João Victor", number: "44", position: "Defensores" },
   { name: "Luiz Otávio", number: "13", position: "Defensores" },
   { name: "Daniel Borges", number: "2", position: "Defensores" },
-  { name: "Zeca", number: "6", position: "Defensores" },
   { name: "Lucas Ramon", number: "36", position: "Defensores" },
-  { name: "Danielzinho", number: "5", position: "Meio-Campo" },
-  { name: "Gabriel", number: "8", position: "Meio-Campo" },
-  { name: "Neto Moura", number: "28", position: "Meio-Campo" },
-  { name: "Chico Kim", number: "7", position: "Meio-Campo" },
-  { name: "Isaque", number: "10", position: "Meio-Campo" },
-  { name: "Fernandinho", number: "77", position: "Meio-Campo" },
-  { name: "Yuri Lima", number: "9", position: "Atacantes" },
-  { name: "Dellatorre", number: "11", position: "Atacantes" },
-  { name: "Guilherme Pato", number: "17", position: "Atacantes" },
-  { name: "Iury Castilho", number: "19", position: "Atacantes" },
+  { name: "Reinaldo", number: "6", position: "Defensores" },
+  { name: "PH", number: "16", position: "Defensores" },
+  { name: "Wesley Santos", number: "26", position: "Defensores" },
+  // Volantes
+  { name: "Matheus Sales", number: "5", position: "Volantes" },
+  { name: "Neto Moura", number: "28", position: "Volantes" },
+  { name: "Roni", number: "8", position: "Volantes" },
+  { name: "Zé Vitor", number: "18", position: "Volantes" },
+  // Meias
+  { name: "Danielzinho", number: "10", position: "Meias" },
+  { name: "Gabriel", number: "7", position: "Meias" },
+  { name: "Chico Kim", number: "20", position: "Meias" },
+  { name: "José Aldo", number: "23", position: "Meias" },
+  // Atacantes
+  { name: "Clayson", number: "11", position: "Atacantes" },
   { name: "Negueba", number: "21", position: "Atacantes" },
+  { name: "Fabrício Daniel", number: "9", position: "Atacantes" },
+  { name: "Iury Castilho", number: "19", position: "Atacantes" },
+  { name: "Léo Gamalho", number: "99", position: "Atacantes" },
+  { name: "Luiz Filipe", number: "17", position: "Atacantes" },
+  { name: "Maceió", number: "27", position: "Atacantes" },
+  { name: "Matheus Davó", number: "29", position: "Atacantes" },
+  { name: "Rafa Silva", number: "37", position: "Atacantes" },
 ];
 
 export function Players() {
